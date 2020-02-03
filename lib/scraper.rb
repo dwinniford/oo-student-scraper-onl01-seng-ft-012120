@@ -8,10 +8,12 @@ class Scraper
     student_array = {}
     doc.css("div.student-card").each do |student|
       student_hash = {}
-      student_hash[:name] = student.css("h4.student-name")
+      student_hash[:name] = student.css("h4.student-name").text
+     # student_hash[:location] = student.css()
+      binding.pry
     end 
     
-    binding.pry
+   
    
     
   end
