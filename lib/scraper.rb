@@ -19,6 +19,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
      student_hash = {}
+     nodeset.map {|element| element["href"]}.compact
     # student_hash[:twitter] = 
     # student_hash[:linkedin] = 
     # student_hash[:github] = 
