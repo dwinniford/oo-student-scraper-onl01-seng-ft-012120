@@ -24,9 +24,9 @@ class Scraper
     # student_hash[:github] = 
     # student_hash[:blog] = 
     student_hash[:profile_quote] = doc.css("div.profile-quote").text
-    # student_hash[:bio] = doc.css("div.bio-content p").text
-    binding.pry 
-    
+    student_hash[:bio] = doc.css("div.bio-content p").text
+    #binding.pry 
+    student_hash
     
   end
 
