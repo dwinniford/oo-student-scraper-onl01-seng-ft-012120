@@ -28,7 +28,7 @@ class Scraper
      student_hash[:twitter] = twitter_link
      student_hash[:linkedin] = linkedin_link
      student_hash[:github] = github_link
-    # student_hash[:blog] = 
+     student_hash[:blog] = links_array.last 
     student_hash[:profile_quote] = doc.css("div.profile-quote").text
     student_hash[:bio] = doc.css("div.bio-content p").text
    # binding.pry 
