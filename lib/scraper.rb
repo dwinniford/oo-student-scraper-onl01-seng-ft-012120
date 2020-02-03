@@ -24,7 +24,7 @@ class Scraper
     # binding.pry 
      links_array.each do |link|
       if link.include? "twitter"
-        student_hash[:twitter] = twitter_link
+        student_hash[:twitter] = link
       elsif link.include? "linkedin"
         student_hash[:linkedin] = link 
       elsif link.include? "github"
