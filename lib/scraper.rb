@@ -30,5 +30,5 @@ end
 #linkedin 
 # github
 # blog 
-# profile_quote 
+# profile_quote doc.css("div.profile-quote").text
 # bio 
