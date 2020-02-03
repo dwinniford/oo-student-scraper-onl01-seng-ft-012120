@@ -20,8 +20,10 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     binding.pry 
     
+    
   end
 
 end
 
 
+# twitter   
