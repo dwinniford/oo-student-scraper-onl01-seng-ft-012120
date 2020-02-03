@@ -23,7 +23,7 @@ class Scraper
     student_hash[:linkedin] = 
     student_hash[:github] = 
     student_hash[:blog] = 
-    student_hash[:profile_quote] =
+    student_hash[:profile_quote] = 
     student_hash[:bio] = 
     binding.pry 
     
