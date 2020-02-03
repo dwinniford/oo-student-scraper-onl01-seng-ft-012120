@@ -22,7 +22,23 @@ class Scraper
      all_links = doc.css('a')
      links_array = all_links.map {|element| element["href"]}.compact.drop(1)
      binding.pry 
-     github_link = links_array.detect { |link| link.to_s.include? "github" }
+     links_array.each do |link|
+      if link.include? "github"
+        student_hash[:github] = link 
+      elsif link.include? "linkedin"
+      
+        
+     end 
+     
+     
+  
+    student_hash
+    
+  end
+
+end
+
+github_link = links_array.detect { |link| link.to_s.include? "github" }
      twitter_link = links_array.detect { |link| link.to_s.include? "twitter" }
      linkedin_link = links_array.detect { |link| link.to_s.include? "linkedin" }
 
@@ -32,12 +48,6 @@ class Scraper
      student_hash[:blog] = links_array.last 
     student_hash[:profile_quote] = doc.css("div.profile-quote").text
     student_hash[:bio] = doc.css("div.bio-content p").text
-  
-    student_hash
-    
-  end
-
-end
 
 
 # twitter   
