@@ -21,7 +21,7 @@ class Scraper
      student_hash = {}
      all_links = doc.css('a')
      links_array = all_links.map {|element| element["href"]}.compact.drop(1)
-     binding.pry 
+    # binding.pry 
      links_array.each do |link|
       if link.include? "twitter"
         student_hash[:twitter] = twitter_link
@@ -35,11 +35,7 @@ class Scraper
      end 
      student_hash[:profile_quote] = doc.css("div.profile-quote").text
      student_hash[:bio] = doc.css("div.bio-content p").text
-     
-     
-  
     student_hash
-    
   end
 
 end
