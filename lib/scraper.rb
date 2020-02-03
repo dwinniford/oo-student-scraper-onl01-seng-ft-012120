@@ -27,3 +27,8 @@ end
 
 
 # twitter   
+#linkedin 
+# github
+# blog 
+# profile_quote 
+# bio 
