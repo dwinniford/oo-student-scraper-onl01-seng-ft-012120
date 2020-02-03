@@ -21,9 +21,9 @@ class Scraper
      student_hash = {}
      all_links = doc.css('a')
      links_array = all_links.map {|element| element["href"]}.compact
-     github_link = links_array.detect { |link| link.to_s.include?(/github/) }
-     twitter_link = links_array.detect { |link| link.to_s.include?(/twitter/) }
-     linkedin_link = links_array.detect { |link| link.to_s.include?(/linkedin/) }
+     github_link = links_array.detect { |link| link.to_s.include?(/'github'/) }
+     twitter_link = links_array.detect { |link| link.to_s.include?(/'twitter'/) }
+     linkedin_link = links_array.detect { |link| link.to_s.include?(/'linkedin'/) }
      student_hash[:twitter] = twitter_link
      student_hash[:linkedin] = linkedin_link
      student_hash[:github] = github_link
