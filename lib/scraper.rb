@@ -23,7 +23,3 @@ class Scraper
 end
 
 
-#  all students doc.css("div.student-card")
-# name  
-# location
-# profile_url
